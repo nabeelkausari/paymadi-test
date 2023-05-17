@@ -499,7 +499,11 @@
       <div class="container mx-auto">
         <div class="grid lg:grid-cols-3 lg:gap-0 gap-6 py-8 lg:py-16">
           <div class="flex flex-col">
-            <img src="/images/paymadi-light.svg" alt="" class="max-w-[150px] mb-8" />
+            <img
+              src="/images/paymadi-light.svg"
+              alt=""
+              class="max-w-[150px] mb-8"
+            />
             <p class="text-white text-sm">
               © Copyright 2015-23 Paymadi. All Rights Reserved.
             </p>
@@ -527,6 +531,12 @@
             <a href="/termsandcondition.html" target="_blank" class="underline"
               >Terms and Condition</a
             >
+            <a href="/App-privacy-policy.html" target="_blank" class="underline"
+              >App Privacy Policy</a
+            >
+            <a href="/refundpolicy.html" target="_blank" class="underline"
+              >Refund Policy</a
+            >
             <a href="/policy.html" target="_blank" class="underline"
               >Privacy Policy</a
             >
@@ -537,14 +547,14 @@
   </body>
 
   <script>
-    const links = document.querySelectorAll('nav a');
+    const links = document.querySelectorAll("nav a");
     links.forEach((link) => {
-      link.addEventListener('click', function (e) {
+      link.addEventListener("click", function (e) {
         e.preventDefault();
-        const href = this.getAttribute('href');
+        const href = this.getAttribute("href");
         const target = document.querySelector(href);
         target.scrollIntoView({
-          behavior: 'smooth',
+          behavior: "smooth",
         });
       });
     });
