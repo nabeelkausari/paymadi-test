@@ -283,12 +283,18 @@
         </div>
 
         <div class="mt-32">
-          <div class="flex items-center justify-center mb-[80px]">
+          <div
+            class="flex lg:flex-row flex-col items-center justify-center mb-[80px] max-w-[80%] mx-auto"
+          >
             <div class="">
-              <img src="/images/rent-payment.png" alt="" />
+              <img
+                src="/images/rent-payment.png"
+                class="max-w-[200px] sm:max-w-[400px] mx-auto"
+                alt=""
+              />
             </div>
 
-            <div class="pl-16">
+            <div class="lg:pl-16">
               <p
                 class="text-2xl font-medium mb-4 tracking-tight text-gray-900 sm:text-3xl"
               >
@@ -301,8 +307,10 @@
             </div>
           </div>
 
-          <div class="flex items-center justify-center mb-[80px]">
-            <div class="pr-16">
+          <div
+            class="flex lg:flex-row flex-col items-center justify-center mb-[80px] max-w-[80%] mx-auto"
+          >
+            <div class="order-2 lg:order-first">
               <p
                 class="text-2xl font-medium mb-4 tracking-tight text-gray-900 sm:text-3xl"
               >
@@ -316,16 +324,26 @@
             </div>
 
             <div class="">
-              <img src="/images/ut-payment.png" alt="" />
+              <img
+                src="/images/ut-payment.png"
+                class="max-w-[200px] sm:max-w-[400px] mx-auto"
+                alt=""
+              />
             </div>
           </div>
 
-          <div class="flex items-center justify-center mb-16">
+          <div
+            class="lg:flex items-center justify-center mb-16 max-w-[80%] mx-auto"
+          >
             <div class="">
-              <img src="/images/elec-payment.png" alt="" />
+              <img
+                src="/images/elec-payment.png"
+                class="max-w-[200px] sm:max-w-[400px] mx-auto"
+                alt=""
+              />
             </div>
 
-            <div class="pr-16">
+            <div class="lg:pr-16">
               <p
                 class="text-2xl font-medium mb-4 tracking-tight text-gray-900 sm:text-3xl"
               >
@@ -348,7 +366,7 @@
           <!-- <div
             class="bg-gradient-to-r from-[#00082D] to-[#004F92] z-[-1] w-[1200px] h-[100%] absolute rounded-md"
           ></div> -->
-          <div class="p-8">
+          <div class="lg:p-8">
             <div class="mb-6">
               <p class="text-[#013167] mx-auto mb-4 max-w-3xl text-xl">
                 About Us
@@ -378,7 +396,7 @@
             </div>
           </div>
 
-          <div class="">
+          <div class="sm:block hidden">
             <img
               src="/images/about_us.png"
               alt=""
@@ -389,7 +407,7 @@
       </div>
     </section>
 
-    <section class="overflow-hidden bg-gray-50 py-16 lg:py-24" id="howitworks">
+    <section class="overflow-hidden bg-slate-50 py-16 lg:py-24" id="howitworks">
       <div class="container mx-auto">
         <div class="text-center">
           <p class="text-[#013167] mx-auto mb-4 max-w-3xl text-center text-xl">
@@ -403,8 +421,10 @@
         </div>
 
         <div class="mt-16">
-          <div class="grid lg:grid-cols-3 gap-6 items-center">
-            <div class="flex flex-col bg-white p-4 rounded-lg shadow-sm">
+          <div class="grid lg:grid-cols-3 gap-6">
+            <div
+              class="flex flex-col bg-white p-4 rounded-lg shadow-sm max-h-[320px]"
+            >
               <div
                 class="w-[fit-content] p-4 flex rounded-full justify-center items-center shadow-md bg-white"
               >
@@ -421,7 +441,9 @@
               </p>
             </div>
 
-            <div class="flex flex-col bg-white p-4 rounded-lg shadow-sm">
+            <div
+              class="flex flex-col bg-white p-4 rounded-lg shadow-sm max-h-[320px]"
+            >
               <div
                 class="w-[fit-content] p-4 flex rounded-full justify-center items-center shadow-md bg-white"
               >
@@ -437,7 +459,9 @@
               </p>
             </div>
 
-            <div class="flex flex-col bg-white p-4 rounded-lg shadow-sm">
+            <div
+              class="flex flex-col bg-white p-4 rounded-lg shadow-sm max-h-[320px]"
+            >
               <div
                 class="w-[fit-content] p-4 flex rounded-full justify-center items-center shadow-md bg-white"
               >
@@ -453,7 +477,9 @@
               </p>
             </div>
 
-            <div class="flex flex-col bg-white p-4 rounded-lg shadow-sm">
+            <div
+              class="flex flex-col bg-white p-4 rounded-lg shadow-sm max-h-[320px]"
+            >
               <div
                 class="w-[fit-content] p-4 flex rounded-full justify-center items-center shadow-md bg-white"
               >
@@ -468,7 +494,9 @@
                 confirm the payment.
               </p>
             </div>
-            <div class="flex flex-col bg-white p-4 rounded-lg shadow-sm">
+            <div
+              class="flex flex-col bg-white p-4 rounded-lg shadow-sm max-h-[320px]"
+            >
               <div
                 class="w-[fit-content] p-4 flex rounded-full justify-center items-center shadow-md bg-white"
               >
@@ -494,7 +522,7 @@
 
     <section>
       <div class="container mx-auto">
-        <div class="grid lg:grid-cols-2 place-items-center">
+        <div class="grid lg:grid-cols-2 lg:gap-0 gap-6 place-items-center">
           <div class="lg:order-first order-last">
             <img src="/images/mockup.png" alt="" />
           </div>
@@ -517,7 +545,7 @@
 
             <div class="mt-12">
               <p class="mb-3">We Accept :</p>
-              <div class="flex items-center gap-4">
+              <div class="flex items-center gap-6 flex-wrap">
                 <img src="/images/mastercard.png" alt="" />
                 <img src="/images/VISA.png" alt="" />
                 <img
