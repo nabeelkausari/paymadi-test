@@ -56,7 +56,10 @@ section {
   visibility: visible;
   right: 0;
 }
-
+#menu__toggle:checked ~ .menu__btn{
+  position: fixed;
+  top: 16px;
+}
 .menu__btn {
   display: flex;
   align-items: center;
@@ -136,3 +139,8 @@ section {
 }
 
 /* <-----faq-------------> */
+
+
+.hello {
+  background-color: red;
+}
