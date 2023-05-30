@@ -146,14 +146,14 @@
         </svg>
 
         <div class="hidden lg:flex items-center text-white gap-6">
-          <a href="">Home</a>
+          <a href="/index.html">Home</a>
           <a href="#catergories-1">Category</a>
           <a href="#about-us">About Us</a>
           <a href="#FAQS">FAQs</a>
           <a href="#blogs">Blogs</a>
         </div>
         <div class="lg:hidden block">
-          <div class="hamburger-menu">
+          <!-- <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
               <span></span>
@@ -161,12 +161,65 @@
 
             <ul class="menu__box">
               <li><a class="menu__item" href="#">Home</a></li>
-              <li><a class="menu__item" href="#catergories">Category</a></li>
+              <li><a class="menu__item" href="#catergories-1">Category</a></li>
               <li><a class="menu__item" href="#about-us">About Us</a></li>
               <li><a class="menu__item" href="#FAQS">FAQs</a></li>
               <li><a class="menu__item" href="#blogs">Blogs</a></li>
             </ul>
+          </div> -->
+
+          <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+              <h3>Menu</h3>
+              <button class="close-btn" onclick="closeSidebar()">
+                &times;
+              </button>
+            </div>
+            <ul class="menu">
+              <li>
+                <a href="/" onclick="scrollToSection('#home')">Home</a>
+              </li>
+              <li>
+                <a
+                  href="#catergories-1"
+                  onclick="scrollToSection('#catergories-1')"
+                  >Category</a
+                >
+              </li>
+              <li>
+                <a href="#about-us" onclick="scrollToSection('#about-us')"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#FAQS" onclick="scrollToSection('#FAQS')">FAQs</a>
+              </li>
+              <li>
+                <a href="#blogs" onclick="scrollToSection('#blogs')">Blogs</a>
+              </li>
+            </ul>
           </div>
+
+          <div class="content">
+            <!-- Main content goes here -->
+          </div>
+          <button class="open-btn" onclick="openSidebar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 17h14M5 12h14M5 7h14"
+              />
+            </svg>
+          </button>
         </div>
       </nav>
     </header>
@@ -377,7 +430,7 @@
                 Get to know about Paymadi
               </p>
             </div>
-            <div class="text-left mt-3 text-lg text-gray-500 hidden answer">
+            <div class="text-left mt-3 text-lg text-gray-500">
               <p class="m-0">
                 Welcome to Paymadi - the digital payment partner that's all
                 about simplifying your life. Based in Bengaluru, the tech hub of
@@ -876,7 +929,7 @@
           </div>
           <div class="">
             <a class="block text-white font-semibold mb-4">About Company</a>
-            <a href="#catergories-1" class="block mb-4 text-gray-300"
+            <a href="#catergories-1-1" class="block mb-4 text-gray-300"
               >Category</a
             >
             <a href="#about-us" class="block mb-4 text-gray-300">About Us</a>
@@ -895,7 +948,7 @@
           </div>
         </div>
         <div class="py-6 border-t border-white">
-          <div class="flex gap-4 justify-end">
+          <div class="flex sm:flex-row flex-col gap-4 justify-end">
             <a
               href="/termsandcondition.html"
               target="_blank"
@@ -955,5 +1008,33 @@
         // Scroll to the top of the page
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
+
+    function openSidebar() {
+      var sidebar = document.querySelector(".sidebar");
+      var content = document.querySelector(".content");
+      var body = document.querySelector("body");
+
+      sidebar.classList.add("open");
+      content.classList.add("shift");
+      body.classList.add("sidebar-open");
+    }
+
+    function closeSidebar() {
+      var sidebar = document.querySelector(".sidebar");
+      var content = document.querySelector(".content");
+      var body = document.querySelector("body");
+
+      sidebar.classList.remove("open");
+      content.classList.remove("shift");
+      body.classList.remove("sidebar-open");
+    }
+
+    function scrollToSection(sectionId) {
+      var section = document.querySelector(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+        closeSidebar();
+      }
+    }
   </script>
 </html>

@@ -144,3 +144,84 @@ section {
 .hello {
   background-color: red;
 }
+
+
+
+.sidebar {
+  position: fixed;
+  top: -636px;
+  left: 0;
+  /* right: -250px; */
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.sidebar.open {
+  top: 0;
+  z-index: 100;
+  left: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid lightgray;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+}
+
+.close-btn {
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.content {
+  margin-left: 0;
+  transition: all 0.3s ease;
+}
+
+.content.shift {
+  margin-left: 250px;
+}
+
+.open-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  cursor: pointer;
+
+ 
+}
+
+.open-btn svg{
+  color:white;
+}
+
+body.sidebar-open {
+  overflow: hidden;
+}
