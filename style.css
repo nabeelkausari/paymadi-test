@@ -149,7 +149,7 @@ section {
 
 .sidebar {
   position: fixed;
-  top: -636px;
+  top: -100%;
   left: 0;
   /* right: -250px; */
   width: 100%;
