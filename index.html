@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simplify Payments | Paymadi</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -927,7 +927,7 @@
               />
             </a>
             <p class="text-sm text-white">
-              © Copyright 2023 Paymadi. All Rights Reserved.
+              © Copyright 2023 Paymadi Technologies LLP. All Rights Reserved.
             </p>
           </div>
           <div class="">
@@ -981,61 +981,61 @@
 
   <script>
     // Get all question containers
-    const questionContainers = document.querySelectorAll(".question-container");
+    const questionContainers = document.querySelectorAll('.question-container');
 
     // Add click event listener to each question container
     questionContainers.forEach((container) => {
-      const button = container.querySelector("h3");
-      const answer = container.querySelector(".answer");
+      const button = container.querySelector('h3');
+      const answer = container.querySelector('.answer');
 
-      button.addEventListener("click", () => {
-        answer.classList.toggle("hidden");
+      button.addEventListener('click', () => {
+        answer.classList.toggle('hidden');
       });
     });
 
-    const links = document.querySelectorAll("nav a");
+    const links = document.querySelectorAll('nav a');
     links.forEach((link) => {
-      link.addEventListener("click", function (e) {
+      link.addEventListener('click', function (e) {
         e.preventDefault();
-        const href = this.getAttribute("href");
+        const href = this.getAttribute('href');
         const target = document.querySelector(href);
         target.scrollIntoView({
-          behavior: "smooth",
+          behavior: 'smooth',
         });
       });
     });
 
     document
-      .getElementById("footer_logo")
-      .addEventListener("click", function () {
+      .getElementById('footer_logo')
+      .addEventListener('click', function () {
         // Scroll to the top of the page
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
 
     function openSidebar() {
-      var sidebar = document.querySelector(".sidebar");
-      var content = document.querySelector(".content");
-      var body = document.querySelector("body");
+      var sidebar = document.querySelector('.sidebar');
+      var content = document.querySelector('.content');
+      var body = document.querySelector('body');
 
-      sidebar.classList.add("open");
-      content.classList.add("shift");
-      body.classList.add("sidebar-open");
+      sidebar.classList.add('open');
+      content.classList.add('shift');
+      body.classList.add('sidebar-open');
     }
 
     function closeSidebar() {
-      var sidebar = document.querySelector(".sidebar");
-      var content = document.querySelector(".content");
-      var body = document.querySelector("body");
+      var sidebar = document.querySelector('.sidebar');
+      var content = document.querySelector('.content');
+      var body = document.querySelector('body');
 
-      sidebar.classList.remove("open");
-      content.classList.remove("shift");
-      body.classList.remove("sidebar-open");
+      sidebar.classList.remove('open');
+      content.classList.remove('shift');
+      body.classList.remove('sidebar-open');
     }
 
     function scrollToSection(sectionId) {
       var section = document.querySelector(sectionId);
       if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
+        section.scrollIntoView({ behavior: 'smooth' });
         closeSidebar();
       }
     }
